@@ -45,7 +45,7 @@ module WashOutSample
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
 
-    config.wash_out.snakecase_input = true
-    config.wash_out.camelize_output = true
+    config.wash_out.snakecase_input = false
+    config.wash_out.camelize_wsdl = false
   end
 end

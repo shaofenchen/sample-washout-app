@@ -21,10 +21,10 @@ class RumbasController < ApplicationController
   def clientVersion
 	render :soap => {}
   end
-  
-  soap_action "authenticate", :args => {:strUserName  => :string, :strPassword  => :string}, :return => { :authenticateResult [{arrayOfString: [:string]}]}
+
+  soap_action "authenticate", :args => {:strUserName  => :string, :strPassword  => :string}, :return => { "authenticateResult" => [{string: [:string]}]}
   def authenticate
-	render :soap => { :authenticateResult [{arrayOfString: ['85B41BEE-5CD9-427a-A61B-83964F1EB426', 'none']}]}
+	render :soap => { "authenticateResult" => [{string: ['abc111', 'none','120','120']}]}
   end
 
    soap_action "connectionError", :args => {:ticket  => :string, :hresult  => :string, :message  => :string}, :return => [:string]

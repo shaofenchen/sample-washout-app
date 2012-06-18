@@ -15,7 +15,7 @@ platform :jruby do
   gem 'jruby-openssl'
 end
 
-gem 'wash_out', :git => 'git://github.com/roundlake/wash_out.git'
+gem 'wash_out', '0.5.0',  :git => 'git://github.com/roundlake/wash_out.git'
 gem 'savon'
 gem 'colored'
 gem 'redcarpet'

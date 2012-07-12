@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  buyer: MyString
+  buyer_email: MyString
+  buyer_name: MyString
+  order_number: MyString
+
+two:
+  buyer: MyString
+  buyer_email: MyString
+  buyer_name: MyString
+  order_number: MyString

@@ -27,6 +27,10 @@ WashOutSample::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+  
+  #configuration required by ActiveAdmin
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 
+  #namespace using by qbWC
   config.wash_out.namespace =  "http://developer.intuit.com/"
 end
